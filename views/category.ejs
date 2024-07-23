@@ -1,0 +1,14 @@
+<%- include('./partials/nav') %>
+<title><%= category %> Menu</title>
+
+<h1><%= category %> Menu</h1>
+
+<% menuItems.forEach(item => { %>
+  <div>
+    <h3><%= item.name %> - $<%= item.price.toFixed(2) %></h3>
+    <p>Rating: <%= item.rating %></p>
+    <p><%= item.details %></p>
+  </div>
+<% }) %>
+</body>
+</html>
